@@ -36,3 +36,14 @@ VALUES
   ('Tomás', 'González', 28, 'Masculino', 'Talcahuano 300, CABA', 'tomas.gonzalez@email.com', 'Programador', 'Informática', 55000),
   ('Florencia', 'García', 33, 'Femenino', 'Larrea 700, CABA', 'florencia.garcia@email.com', 'Analista', 'Marketing', 75000),
   ('Gabriel', 'Ramos', 38, 'Masculino', 'México 900, CABA', 'gabriel.ramos@email.com', 'Analista', 'Finanzas', 80000);
+  
+1_SELECT * from Empleados WHERE sector = 'Ventas'
+2_SELECT * FROM Empleados WHERE sexo = 'masculino'
+3_SELECT * from Empleados WHERE edad BETWEEN 20 AND 35
+4_SELECT * FROM Empleados WHERE sector = 'Gerente'
+5_update Empleados set sueldo = 200000 WHERE sector='Gerente'
+6_UPDATE Empleados set puesto = 'Developer' WHERE puesto='Programdor'
+7_UPDATE Empleados set sueldo= (sueldo * 0.10)+ sueldo WHERE sexo = 'Femenino'
+8_ SELECT * FROM Empleados WHERE puesto= 'Gerente' and sector = 'Marketing'
+9_ UPDATE Empleados set sueldo = (sueldo * 0.10) + sueldo WHERE nombre like '%a'
+10_DROP TABLE Empleados
