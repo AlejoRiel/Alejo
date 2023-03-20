@@ -50,3 +50,16 @@ h) Recupere los registros cuyo "precio" sea distinto de vacio.
 i) Actualizar todos los registros que tengan: laboratorio igual a 'null' o vacio a "Bayer"
 j) Actualizar todos los registros que tengan: precio igual a 'null' o vacio a 168
 k) Ordenar los medicamentos en orden alfabetico.
+
+SELECT * FROM medicamentos
+a)SELECT * FROM medicamentos WHERE laboratorio = 'null';
+b)SELECT * FROM medicamentos WHERE laboratorio ='';
+c)SELECT * FROM medicamentos WHERE precio = '';
+d)SELECT * FROM medicamentos WHERE laboratorio != ''
+e)SELECT * FROM medicamentos WHERE laboratorio !='null'
+f)SELECT * FROM medicamentos WHERE laboratorio = 'null' or laboratorio='';
+g)SELECT * FROM medicamentos WHERE precio= 'null' or precio=''
+h)SELECT * FROM medicamentos WHERE precio != ''
+I)UPDATE medicamentos set laboratorio = 'Bayer' WHERE laboratorio = 'null' or laboratorio=''
+j)UPDATE medicamentos set precio= 168 WHERE precio= 'null' or precio= ''
+k)SELECT * from medicamentos order by nombre
