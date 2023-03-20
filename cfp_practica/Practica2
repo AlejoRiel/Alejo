@@ -1,0 +1,52 @@
+Una farmacia nos solicita crear una base de datos para guardar su informacion referente a sus medicamentos. Se deberá crear una tabla llamada "medicamentos".
+
+1- Crear la tabla "medicamentos" con la siguiente estructura:
+CREATE TABLE "medicamentos" (
+	"medicamento"	INTEGER NOT NULL UNIQUE,
+	"nombre"	TEXT NOT NULL,
+	"laboratorio"	TEXT,
+	"precio"	REAL,
+	"cantidad"	INTEGER NOT NULL,
+	PRIMARY KEY("medicamento" AUTOINCREMENT)
+);
+
+2- Insertar los siguientes datos:
+INSERT INTO medicamentos (nombre, laboratorio, precio, cantidad) VALUES 
+('Paracetamol', 'Genérico', 1.5, 100),
+('Ibuprofeno', 'Genérico', 2.0, 50),
+('Amoxicilina', 'Pfizer', 3.0, 75),
+('Omeprazol', 'AstraZeneca', 2.5, 60),
+('Loratadina', 'Genérico', 1.0, 120),
+('Aspirina', 'null', 1.0, 80),
+('Simvastatina', 'Merck', 'NULL', 30),
+('Enalapril', 'Novartis', 4.0, 'NULL'),
+('Piroxicam', 'Genérico', 'NULL', 'NULL'),
+('Acetazolamida', 'Bayer', 5.0, 25),
+('Dexametasona', 'Pfizer', 4.5, 45),
+('Metoclopramida', 'Genérico', 2.5, 90),
+('Clotrimazol', 'Genomma Lab', 3.0, 70),
+('Fenofibrato', 'Abbott', 4.0, 55),
+('Ciprofloxacino', 'Bayer', 3.5, 65),
+('Metformina', 'Merck', 2.0, 85),
+('Ketorolaco', 'null', 2.5, 'NULL'),
+('Losartán', 'MSD', 'NULL', 40),
+('Cefalexina', 'Genérico', 3.5, 'NULL'),
+('Levofloxacino', 'Janssen', 'NULL', 20),
+('Caladryl','','',200),
+('Tafirol','null',140,200),
+('Agua Oxigenada','',120,200),
+('Vendas','Generico','',200);
+
+
+3- Ejercicios:
+a) Recupere los registros que contengan valor "null" en el campo "laboratorio"
+b) Recupere los registros que contengan valor vacio en el campo "laboratorio". Notaran que estas dos consultas el resultado es diferente.
+c) Recupere los registros que contengan valor vacio en el campo "precio".
+d) Recupere los registros cuyo laboratorio no contenga una cadena vacía
+e) Recupere los registros cuyo laboratorio sean distintos de 'null'
+f) Recupere los registros que contengan valor 'null' en el campo "laboratorio" y además los que contengan una cadena vacia en el mismo campo
+g) Recupere los registros cuyo "precio" sea 'null' o vacio.
+h) Recupere los registros cuyo "precio" sea distinto de vacio.
+i) Actualizar todos los registros que tengan: laboratorio igual a 'null' o vacio a "Bayer"
+j) Actualizar todos los registros que tengan: precio igual a 'null' o vacio a 168
+k) Ordenar los medicamentos en orden alfabetico.
