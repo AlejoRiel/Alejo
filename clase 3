@@ -17,3 +17,7 @@ INSERT into actividades (nombre,dia,salon,profesor) VALUES
 ('Ballet','Lunes','102','Joaquin'),
 ('Spinning','Miercoles','112','Ana'),
 ('Karate','Viernes','112','Xavier');
+
+SELECT * FROM actividades
+SELECT * from actividades WHERE IDactividades IN (1,2,5)
+SELECT * FROM actividades WHERE dia IN ('Martes','Jueves','Viernes')
