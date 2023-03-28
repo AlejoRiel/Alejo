@@ -1009,14 +1009,28 @@ insert into usuarios (nombre, apellido, email, edad) values ('Ab', 'Spratley', '
 insert into usuarios (nombre, apellido, email, edad) values ('Emelia', 'Lincoln', 'elincolnrp@cisco.com', 96);
 insert into usuarios (nombre, apellido, email, edad) values ('Sean', 'Pain', 'spainrq@rakuten.co.jp', 84);
 insert into usuarios (nombre, apellido, email, edad) values ('Tisha', 'Halliwell', 'thalliwellrr@virginia.edu', 54);
+
+1-Seleccionar los registros cuya edad esté entre 25 y 40 años
+2- Seleccionar los registros cuya edad NO este entre 25 y 40 años.
+3- Seleccionar los registros cuyo nombre empiece con "D"
+4- Seleccionar los registros cuyo email tenga el dominio "@google"
+5- Seleccionar los registros con el "id" 97,106,109,11,323,404,551)
+6- Devolver el id y nombre de las personas que tengan entre 30 y 45 años.
+7- Devolver el nombre y edad de las personas que tengan menos de 25 años.
+8- Seleccionar el nombre y apellido de las personas que el nombre empiece con "B" y el apellido empice con "C".
+9- Seleccionar el nombre, apellido y edad de los primeros 30 usuarios y ordenarlos por edad de mayor a menor.
+10- Actualizar la edad a 34 años de los registros con el "id" 690,691,692,693. 
+
+
 SELECT * from usuarios
-SELECT * FROM usuarios WHERE edad BETWEEN 25 AND 40 
-SELECT * FROM usuarios WHERE edad NOT BETWEEN 25 and 40
-SELECT * FROM usuarios WHERE nombre like 'D%'
-SELECT * FROM usuarios WHERE email like '%@google%'
-SELECT * FROM usuarios WHERE id in (97,106,109,11,323,404,551)
-SELECT nombre,id FROM usuarios where edad BETWEEN 30 and 45
-SELECT nombre,edad FROM usuarios WHERE edad <25
-SELECT nombre,apellido FROM usuarios WHERE nombre like 'B%' AND apellido like 'C%'
-SELECT nombre, apellido, edad from usuarios ORDER by edad DESC LIMIT 30
-UPDATE  usuarios set edad=34 WHERE id in (690,691,692,693)
+
+1-SELECT * FROM usuarios WHERE edad BETWEEN 25 AND 40 
+2-SELECT * FROM usuarios WHERE edad NOT BETWEEN 25 and 40
+3-SELECT * FROM usuarios WHERE nombre like 'D%'
+4-SELECT * FROM usuarios WHERE email like '%@google%'
+5-SELECT * FROM usuarios WHERE id in (97,106,109,11,323,404,551)
+6-SELECT nombre,id FROM usuarios where edad BETWEEN 30 and 45
+7-SELECT nombre,edad FROM usuarios WHERE edad <25
+8-SELECT nombre,apellido FROM usuarios WHERE nombre like 'B%' AND apellido like 'C%'
+9-SELECT nombre, apellido, edad from usuarios ORDER by edad DESC LIMIT 30
+10-UPDATE  usuarios set edad=34 WHERE id in (690,691,692,693)
