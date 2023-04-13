@@ -1,0 +1,32 @@
+SELECT count(ProductName) FROM Products
+
+
+select avg(price) as Precio_Promedio from Products
+
+SELECT round(avg(price),2) FROM Products
+
+SELECT * FROM OrderDetails GROUP by ProductID in (10309)
+
+--SELECT nombre_de_la_columna FROM TABLA GROUP by nombre_de_la_otra_columna
+
+SELECT ProductName FROM Products GROUP by 
+--muestra la cantidad de veces que se vendio ese producto
+SELECT ProductID,sum (Quantity) as suma_total FROM OrderDetails GROUP by ProductID
+
+
+SELECT ProductID,sum (Quantity) as suma_total FROM OrderDetails GROUP by ProductID HAVING suma_total BETWEEN 40 and 70 order by suma_total
+----orden-------------------------------------------------
+--1- seleccionan los campos (SELECT)
+--2- filtran los regristros (where)
+--3- agrupan los registros (GROUP by)
+--4- filran los agrupamientos(HAVING)
+--5- ordenamiento (order by)
+
+
+
+
+--subconsulta: En SQL una subconsulta, es una consulta anidada, que se utiliza para obtener datos especificos de una tabla o varias tablas relacinadas. La subconsulta se ejecuta primero y su resulta se utiliza como entradas para la consulta principal que la continue.
+
+--SELECT <nombre_columna-1>,<nombre_columna2>,(subconsulta) from tabla
+
+SELECT ProductID,sum (Quantity) as suma_total,(SELECT price from Products where ProductID = OD.ProductID) as precio_unitario FROM OrderDetails OD GROUP by ProductID order by suma_total
