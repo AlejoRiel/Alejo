@@ -1,0 +1,26 @@
+#todo: que es una variable
+
+#lastname = "lozano"
+#entero= 2
+#booleano= True
+#real= 2.3
+
+#print(lastname)
+#print(entero)
+#print(booleano)
+#print(real)
+
+#capturo datos por teclado
+#name= input("ingrese su nombre:")
+#print("el nombre ingresado es: " +name)
+#age=input("ingrese su edad:")
+#print("La edad es" + age)
+#print(f"el nombre ingresado es {name} y su edad es {age}")
+
+#todo:solicitar por teclado dos valores y mostrar el resultado de la suma de esos dos valores
+
+numero1=int(input("ingrese el primer valor:"))
+numero2=int(input("ingrese el segundo valor:"))
+suma=numero1+numero2
+
+print(f"{numero1} + {numero2} = {suma}")
