@@ -24,3 +24,18 @@ numero2=int(input("ingrese el segundo valor:"))
 suma=numero1+numero2
 
 print(f"{numero1} + {numero2} = {suma}")
+
+
+cadena= "noicamargorP, 5.9 , otinaluF emsoC"
+print(cadena[33:0:-1] )
+
+nombre=(cadena [33:19:-1])
+print(nombre)
+
+nota=(cadena[17:13:-1])
+print(nota)
+
+materia=(cadena[11::-1])
+print(materia)
+
+print(f"mi nombre es {nombre} y me nota es {nota} en la materia {materia}")
