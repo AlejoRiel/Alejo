@@ -39,3 +39,13 @@ materia=(cadena[11::-1])
 print(materia)
 
 print(f"mi nombre es {nombre} y me nota es {nota} en la materia {materia}")
+
+
+
+
+
+
+
+
+###3operadores####
+condicion= (nombre !="****"),(edad>10 and edad<18)
