@@ -49,3 +49,17 @@ print(f"mi nombre es {nombre} y me nota es {nota} en la materia {materia}")
 
 ###3operadores####
 condicion= (nombre !="****"),(edad>10 and edad<18)
+·····································································································
+
+
+
+
+edad= int(input ("Ingrese su edad: "))
+sexo= (input ("ingrese su genero, 'f' FEMENINO O 'M' MASCULINO: "))
+
+if edad >=18 and sexo.lower()=="f":
+    print("puede ingresar")
+     
+else:
+    print("no puede ingresar")
+
