@@ -63,3 +63,18 @@ if edad >=18 and sexo.lower()=="f":
 else:
     print("no puede ingresar")
 
+__________________________________________________________________________________________
+
+numero_1=int(input("ingrese el primer numero,para ver cual es el mayor de los tres:"))
+numero_2=int(input("ingrese segundo numero"))
+numero_3=int(input("ingrese tercer numero"))
+
+numeros=(numero_1,numero_2,numero_3)
+print(numeros)
+
+if numero_1>numero_2 and numero_1> numero_3:
+    print(f"(numero_1)es el mayor ")
+elif numero_2>numero_3 and numero_2>numero_1:
+    print(f"(numero_2)es el mayor")
+elif numero_3>numero_2 and numero_3>numero_1:
+    print(f"(numero_3)es el mayor")
