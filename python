@@ -88,3 +88,17 @@ while num!=0 :
    acumulador=acumulador+num
 else:
     print(f"la suma es:{acumulador}")
+________________________________________________________
+
+cadena=input("ingrese la palabra:")
+vocal="aeiouAEIOU"
+tiene_vocal=False
+for letra in cadena:
+    if letra in vocal:
+        tiene_vocal=True
+        break
+if tiene_vocal:
+    print("tiene vocales")
+
+else: 
+    print("no tiene vocales")        
