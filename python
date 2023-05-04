@@ -102,3 +102,68 @@ if tiene_vocal:
 
 else: 
     print("no tiene vocales")        
+    
+    
+________________________________________
+#conjunto= set
+
+set={1,2,3,4,5,"G",-2}    
+print(set)
+print(type(set))
+
+#metodo ADD
+
+numeros={1,2,3,4,5}
+print(numeros)
+numeros.add(6)
+print(numeros)
+
+#update 
+animales={"Lobo","Oveja","Perro"}
+print(animales)
+animales.update(["Conejo","liebre", "Leon"])
+print(animales)
+
+#LEN
+print(len(animales))
+
+#discard
+
+series=("El rey leon","Coraje","Dragon ball")
+print(series)
+series.discard("GOAT")
+series.remove("GOAT")
+print(series)
+
+###metodos que se pueden utilizar para saber todos los modos que se pueden utilizar
+print(dir(series))
+
+
+### POP()
+
+numeros={1,2,3,4}
+while numeros:
+    print(f('en esta vuelta salio el numero{numeros})) 
+
+
+###definicion del diccionario:
+alumno={
+    "nombre": "alejo",
+    "apellido": "riel",
+    "mail": "alejoo@gmail.com",
+    "edad":25
+}
+print(alumno)
+
+
+libro={
+    "nombre":"El principito",
+    "autor":"KALIAN GORDS",
+    "genero":"FANTASTICO",
+    "año":1993,
+    "editorial":"CANOL"
+}
+
+print(libro)
+print(libro["nombre"])
+print([])
