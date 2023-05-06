@@ -167,3 +167,57 @@ libro={
 print(libro)
 print(libro["nombre"])
 print([])
+
+--------------------------------------------------------------
+#def saludar():
+#    print("Estoy saludando desde la funcion")
+
+#saludar()
+#saludar()
+#saludar()
+
+#def saludar_con_nombre(nombre):
+#    print(f"Hola {nombre} como estas?")
+
+#saludar_con_nombre("Alejo")    
+
+##Variables locales
+
+
+#def test():
+#    variable_test=10
+#    print(variable_test)
+
+#print(variable_test)
+
+##variable global
+#variable_test=10
+#def test():
+#    print(variable_test)
+    
+#test()    
+
+##definicion global y uso local
+#variable_test=10
+#def test():
+#    variable_test=15
+#    print(variable_test)
+
+#test()
+
+##todo:return
+#def saludar(nombre):
+#    saludando=print(f"Hola {nombre} como estas?")
+#    return saludando
+#    print("El saludo fue correcto")   # esto no se ejecuta
+#saludar("Alejo")
+
+##TODO: TIPO VALOR return
+
+def numeros():
+    return 6
+
+resultado= numeros() + 5
+print(resultado)
+print(f"{numeros() * 2}")
+    
