@@ -220,4 +220,58 @@ def numeros():
 resultado= numeros() + 5
 print(resultado)
 print(f"{numeros() * 2}")
+
+-------------------------------------------------------------------------------------------------
+#num1 = int(input("ingrese el primer numero,para ver cual es el mayor de los tres:"))
+#num2 = int(input("ingrese segundo numero"))
+#num3 = int(input("ingrese tercer numero"))
+
+
+#def num_mayor(num1,num2,num3):
+#    if num1>num2 and num1> num3:
+#        print(f" {num1} es mayor")
+#    if num2>num3 and num2>num1:
+#        print(f"{num2} es el mayor")
+#    if num3>num2 and num3>num1:
+#        print(f"{num3} es el mayor")
+    
+
+#num_mayor(num1,num2,num3)
+
+## area de ciculo
+#def area_circulo(radio, pi)
+#    return pi *(radio ** 2)
+
+#resultado= area_circulo(10,3.14)
+#print(resultado)
+
+##parametro default
+#def area_circulo(radio, pi)
+#    return pi *(radio ** 2)
+
+#resultado= area_circulo(10)
+#print(resultado)
+
+
+
+#def numeros (num1,num2=10):
+#    return num1 + num2
+
+#resultado=numeros(20)
+#print(resultado)
+
+##escribir una funcion que calcule el promedio de una lista de numeros.si no se proporciona una lista el valor por defecto  sera una lista vacia.
+
+def promedio_lista(numeros=[]):
+    if len(numeros)== 0:
+        return "la lista esta vacia"
+    else:
+        return sum(numeros) / len(numeros) 
+
+###prueba pasando argumentos
+resultado=promedio_lista([5,10,8])
+print(resultado)
+###lista vacia sin argumentos
+resultado= promedio_lista()
+print(resultado)
     
