@@ -260,7 +260,8 @@ print(f"{numeros() * 2}")
 #resultado=numeros(20)
 #print(resultado)
 
-##escribir una funcion que calcule el promedio de una lista de numeros.si no se proporciona una lista el valor por defecto  sera una lista vacia.
+##escribir una funcion que calcule el promedio de una lista de numeros.si no se proporciona una lista el valor por defecto  
+sera una lista vacia.
 
 def promedio_lista(numeros=[]):
     if len(numeros)== 0:
