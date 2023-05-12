@@ -275,4 +275,8 @@ print(resultado)
 ###lista vacia sin argumentos
 resultado= promedio_lista()
 print(resultado)
+
+
+
+--------------------------------------------------------------
     
