@@ -280,3 +280,16 @@ print(resultado)
 
 --------------------------------------------------------------
     
+##Escriba una funcion llamada concatenar que acepte un numero variable 
+#de argumentos de strings y devuelva una cadena que contenga todos los 
+#argumentos contatnados en una sola cadena separada por un separador 
+#opcional.  La funcion debe utilizar *args para aceptar un numero 
+#variable de argumentos y un argumento adicional opcional llamado 
+#separador que se utilizara como el separador de la cadena. 
+#Si no seproporciona un separador, la fucion debe utilizar un espacio en blanco por defecto 
+
+def concatenar(*args, separador=" "):
+    return separador.join(args)
+
+palabras=concatenar("Hola", "Nestor", "como", "estas", "saludos" , "a", "Robert")
+print(palabras)
