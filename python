@@ -291,5 +291,135 @@ print(resultado)
 def concatenar(*args, separador=" "):
     return separador.join(args)
 
+
 palabras=concatenar("Hola", "Nestor", "como", "estas", "saludos" , "a", "Robert")
 print(palabras)
+-------------------------------------------------------------------------
+#En Python tenemos la posibilidad de declarar varibles vacias, es decir con valor "none"
+#nombre= None
+#print(nombre)
+#print(type(nombre))
+
+
+#OPERADOR TERNARIO
+
+#definicion variables 
+
+#nota=4 
+#color= None
+
+#logica del programa
+
+#if nota>=7:
+#    color="Verde"
+#else:
+#    color="rojo"
+
+#llamada
+
+#print(nota, color)        
+
+#operador ternario
+#nota= 4
+#color="verde" if nota >= 7 else "rojo"
+
+#print(nota,color)
+
+#ejercicio:dado un numero entero de x imprimir si es par, y "es impar"
+
+#numero=int(input("ingrese un numero:"))
+
+#print("es par") if numero % 2 == 0 else print("es impar")
+#print("es par" if numero % 2 == 0 else "es impar")
+
+#ejercicio:dados dos numeros enteros A y B, imprimir"A es mayor" si A es mayor que B, "B es mayor " si B es mayor que A, y "SON IGUALES",si ambos numeros son iguales.
+
+A= int(input("ingrese valor de A :"))
+B= int(input("ingrese valor de B :"))
+
+print("A es mayor que B" if A>B else "B es mayor que A" if B>A else "son iguales")
+
+-----------------------------------------------------------------------------------
+#kwargs: De esta manera trabajamos con diccionarios. Cada argumento con nombre se convierte en un par de clave-valor en la direccion.
+
+#def usuario(**kwargs):
+#    print(kwargs)
+#    print(type(kwargs))
+
+#usuario(nombre="Roberto",apellido="Aguirre", edad=25)
+
+#usuario(Dnaiel=[10,3,0], Nestor=[10,4,10])
+
+#Funciones anidadas: las funciones pueden ser anidadas, es decir una funcion puede contener otra funcion:
+
+#ejemplo: Operaciones bancarias: Deposito, retiro
+
+# FORMA_1
+#def operacion():
+#    def deposito(cantidad, balance):
+#        return balance + cantidad
+#    def retiro(cantidad, balance):
+#        if cantidad<= balance:
+#            return balance - cantidad
+#        else:
+#            return None
+        
+#    print(deposito(10,20))        
+#    print(retiro(50,80))
+
+#operacion()
+
+#FORMA_2
+
+#def operacion(cantidad,balance,tipo="deposito"):
+#    def deposito(cantidad,balance):
+#        return balance + cantidad
+
+#    def retiro(cantidad, balance):
+#        if cantidad<= balance:
+#                return balance - cantidad
+#        else:
+#            return None
+
+#    if tipo == "deposito":
+#        return deposito(cantidad,balance)
+#    elif tipo == "retiro":
+#        return retiro(cantidad, balance)
+    
+#resultado=operacion(10,30)  #TOMA EL VALOR POR DEFAULT QUE ES EL "DEPOSITO" 
+#resultado=operacion(10,30,"retiro")
+#print(resultado) 
+
+#todo:Escribir una funcion calculadora que reciba dos numeros y un caracter que indique la operacion a realizar(+,-,*,/). La fucion debe devolver el resultado de la operacion aritmetica. utilizar funciones animadas para implementar las operaciones.
+
+def calculadora(num1,num2,operacion):
+     def suma(num1,num2):
+          return (num1+num2)
+     def rest(num1,num2):
+          return(num1-num2)
+     def multi(num1,num2):
+          return(num1*num2)
+     def division(num1,num2):
+          return(num1/num2)
+     if operacion == "+":
+          return suma(num1,num2)
+     elif operacion == "-":
+          return rest(num1,num2)
+     elif operacion == "*":
+          return multi(num1,num2)
+     elif operacion == "/":
+        return division(num1,num2)
+     else:
+        return None
+
+resultado=calculadora(10,5,operacion='-')
+print(resultado)         
+     
+resultado=calculadora(10,5,operacion='+')
+print(resultado)         
+
+resultado=calculadora(10,5,operacion='/')
+print(resultado)         
+
+resultado=calculadora(10,5,operacion='*')
+print(resultado)         
